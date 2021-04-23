@@ -5,10 +5,11 @@ public class Calculos {
     double num1;
     double num2;
 
-    public Calculos(double num1, double num2) {
-        this.num1 = num1;
-        this.num2 = num2;
-    }
+//    public Calculos(double num1, double num2) {
+//        this.num1 = num1;
+//        this.num2 = num2;
+//    }
+    public Calculos(){}
 
     public double getNum1() {
         return num1;
@@ -29,8 +30,8 @@ public class Calculos {
     // Metodo para la suma
     public int sumar(double a, double b){
         int res = 0;
-        
-        res =  (int)(a + b) ;
+ 
+        res = (int)(a + b);
         
         return res;
     }
@@ -62,6 +63,16 @@ public class Calculos {
         res =  (int)((Math.random())*(a-b+1)+b);
         
         return res;
+    }
+    
+    public int sumatoria(double a,double b){
+        int res = 0;
+        
+        int n = (int) b;
+        
+        for (int i = (int) a; i<=n ; i++) {
+            res +=i;
+        }return res;
     }
     
     

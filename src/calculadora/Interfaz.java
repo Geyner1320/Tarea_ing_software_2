@@ -5,6 +5,9 @@
  */
 package calculadora;
 
+import javax.swing.JOptionPane;
+import calculadora.Calculos;
+
 /**
  *
  * @author alexi
@@ -17,6 +20,8 @@ public class Interfaz extends javax.swing.JFrame {
     public Interfaz() {
         initComponents();
     }
+    
+    Calculos cal = new Calculos();
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -50,6 +55,11 @@ public class Interfaz extends javax.swing.JFrame {
         BtnSuma.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnSuma.setText("Suma de 2 reales");
         BtnSuma.setName(""); // NOI18N
+        BtnSuma.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSumaActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 170, 30));
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
@@ -71,24 +81,44 @@ public class Interfaz extends javax.swing.JFrame {
         BtnPotencia.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnPotencia.setText("Potencia Número Real");
         BtnPotencia.setName(""); // NOI18N
+        BtnPotencia.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnPotenciaActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnPotencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 170, 30));
 
         BtnRaiz.setBackground(new java.awt.Color(50, 102, 81));
         BtnRaiz.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnRaiz.setText("Raiz Cuadrada");
         BtnRaiz.setName(""); // NOI18N
+        BtnRaiz.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnRaizActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnRaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 170, 30));
 
         BtnAleatorio.setBackground(new java.awt.Color(50, 102, 81));
         BtnAleatorio.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnAleatorio.setText("Aleatorio entre 2 Números");
         BtnAleatorio.setName(""); // NOI18N
+        BtnAleatorio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnAleatorioActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnAleatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 210, 30));
 
         BtnSumatoriaEntre2Numeros.setBackground(new java.awt.Color(50, 102, 81));
         BtnSumatoriaEntre2Numeros.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnSumatoriaEntre2Numeros.setText("Sumatoria real entre 2 números");
         BtnSumatoriaEntre2Numeros.setName(""); // NOI18N
+        BtnSumatoriaEntre2Numeros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSumatoriaEntre2NumerosActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnSumatoriaEntre2Numeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 230, 30));
 
         BtnFibonacci.setBackground(new java.awt.Color(50, 102, 81));
@@ -107,6 +137,7 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(248, 148, 6));
 
+        TxtResultados.setEditable(false);
         TxtResultados.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 48)); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -130,6 +161,40 @@ public class Interfaz extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void BtnSumaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSumaActionPerformed
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor real"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese otro valor real"));
+        int res = cal.sumar(num1, num2);
+        TxtResultados.setText(""+res);
+    }//GEN-LAST:event_BtnSumaActionPerformed
+
+    private void BtnRaizActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnRaizActionPerformed
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor real"));
+        double res = cal.raiz(num1);
+        TxtResultados.setText(""+res);
+    }//GEN-LAST:event_BtnRaizActionPerformed
+
+    private void BtnPotenciaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnPotenciaActionPerformed
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese la base"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese potencia"));
+        double res = cal.potencia(num1,num2);
+        TxtResultados.setText(""+res);
+    }//GEN-LAST:event_BtnPotenciaActionPerformed
+
+    private void BtnAleatorioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnAleatorioActionPerformed
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese otro valor"));
+        double res = cal.aleatorio(num1,num2);
+        TxtResultados.setText(""+res);
+    }//GEN-LAST:event_BtnAleatorioActionPerformed
+
+    private void BtnSumatoriaEntre2NumerosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSumatoriaEntre2NumerosActionPerformed
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese otro valor"));
+        int res = cal.sumatoria(num1,num2);
+        TxtResultados.setText(""+res);
+    }//GEN-LAST:event_BtnSumatoriaEntre2NumerosActionPerformed
 
     /**
      * @param args the command line arguments
