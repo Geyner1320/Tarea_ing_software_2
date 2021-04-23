@@ -29,19 +29,13 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         BtnSuma = new javax.swing.JButton();
+        jPanel3 = new javax.swing.JPanel();
         BtnPotencia = new javax.swing.JButton();
         BtnRaiz = new javax.swing.JButton();
-        Btn3 = new javax.swing.JButton();
-        Btn1 = new javax.swing.JButton();
-        Btn2 = new javax.swing.JButton();
-        Btn4 = new javax.swing.JButton();
-        Btn5 = new javax.swing.JButton();
-        Btn6 = new javax.swing.JButton();
-        Btn7 = new javax.swing.JButton();
-        Btn8 = new javax.swing.JButton();
-        Btn9 = new javax.swing.JButton();
-        Btn10 = new javax.swing.JButton();
-        jPanel3 = new javax.swing.JPanel();
+        BtnAleatorio = new javax.swing.JButton();
+        BtnSumatoriaEntre2Numeros = new javax.swing.JButton();
+        BtnFibonacci = new javax.swing.JButton();
+        BtnSerie = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         TxtResultados = new javax.swing.JTextField();
 
@@ -52,81 +46,11 @@ public class Interfaz extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(43, 60, 79));
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        BtnSuma.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        BtnSuma.setText("+");
+        BtnSuma.setBackground(new java.awt.Color(50, 102, 81));
+        BtnSuma.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnSuma.setText("Suma de 2 reales");
         BtnSuma.setName(""); // NOI18N
-        jPanel1.add(BtnSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(449, 23, 70, 71));
-
-        BtnPotencia.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        BtnPotencia.setText("^");
-        BtnPotencia.setName(""); // NOI18N
-        jPanel1.add(BtnPotencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(356, 23, 75, 71));
-
-        BtnRaiz.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        BtnRaiz.setText("√");
-        BtnRaiz.setName(""); // NOI18N
-        jPanel1.add(BtnRaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(534, 23, 71, 71));
-
-        Btn3.setBackground(new java.awt.Color(50, 102, 81));
-        Btn3.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn3.setText("3");
-        Btn3.setName(""); // NOI18N
-        jPanel1.add(Btn3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 70, 70));
-
-        Btn1.setBackground(new java.awt.Color(50, 102, 81));
-        Btn1.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn1.setText("1");
-        Btn1.setName(""); // NOI18N
-        jPanel1.add(Btn1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, 70, 71));
-
-        Btn2.setBackground(new java.awt.Color(50, 102, 81));
-        Btn2.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn2.setText("2");
-        Btn2.setName(""); // NOI18N
-        jPanel1.add(Btn2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 40, 70, 71));
-
-        Btn4.setBackground(new java.awt.Color(50, 102, 81));
-        Btn4.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn4.setText("4");
-        Btn4.setName(""); // NOI18N
-        jPanel1.add(Btn4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 130, 70, 71));
-
-        Btn5.setBackground(new java.awt.Color(50, 102, 81));
-        Btn5.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn5.setText("5");
-        Btn5.setName(""); // NOI18N
-        jPanel1.add(Btn5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 70, 71));
-
-        Btn6.setBackground(new java.awt.Color(50, 102, 81));
-        Btn6.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn6.setText("6");
-        Btn6.setName(""); // NOI18N
-        jPanel1.add(Btn6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 130, 70, 71));
-
-        Btn7.setBackground(new java.awt.Color(50, 102, 81));
-        Btn7.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn7.setText("7");
-        Btn7.setName(""); // NOI18N
-        jPanel1.add(Btn7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 220, 70, 71));
-
-        Btn8.setBackground(new java.awt.Color(50, 102, 81));
-        Btn8.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn8.setText("8");
-        Btn8.setName(""); // NOI18N
-        jPanel1.add(Btn8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 220, 70, 71));
-
-        Btn9.setBackground(new java.awt.Color(50, 102, 81));
-        Btn9.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn9.setText("9");
-        Btn9.setToolTipText("");
-        Btn9.setName(""); // NOI18N
-        jPanel1.add(Btn9, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 220, 70, 71));
-
-        Btn10.setBackground(new java.awt.Color(50, 102, 81));
-        Btn10.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
-        Btn10.setText("9");
-        Btn10.setName(""); // NOI18N
-        jPanel1.add(Btn10, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 70, 71));
+        jPanel1.add(BtnSuma, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 30, 170, 30));
 
         jPanel3.setBackground(new java.awt.Color(204, 204, 204));
 
@@ -138,12 +62,48 @@ public class Interfaz extends javax.swing.JFrame {
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 400, Short.MAX_VALUE)
         );
 
-        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 0, -1, 400));
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 0, -1, 400));
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 620, 400));
+        BtnPotencia.setBackground(new java.awt.Color(50, 102, 81));
+        BtnPotencia.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnPotencia.setText("Potencia Número Real");
+        BtnPotencia.setName(""); // NOI18N
+        jPanel1.add(BtnPotencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 170, 170, 30));
+
+        BtnRaiz.setBackground(new java.awt.Color(50, 102, 81));
+        BtnRaiz.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnRaiz.setText("Raiz Cuadrada");
+        BtnRaiz.setName(""); // NOI18N
+        jPanel1.add(BtnRaiz, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 100, 170, 30));
+
+        BtnAleatorio.setBackground(new java.awt.Color(50, 102, 81));
+        BtnAleatorio.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnAleatorio.setText("Aleatorio entre 2 Números");
+        BtnAleatorio.setName(""); // NOI18N
+        jPanel1.add(BtnAleatorio, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 210, 30));
+
+        BtnSumatoriaEntre2Numeros.setBackground(new java.awt.Color(50, 102, 81));
+        BtnSumatoriaEntre2Numeros.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnSumatoriaEntre2Numeros.setText("Sumatoria real entre 2 números");
+        BtnSumatoriaEntre2Numeros.setName(""); // NOI18N
+        jPanel1.add(BtnSumatoriaEntre2Numeros, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 80, 230, 30));
+
+        BtnFibonacci.setBackground(new java.awt.Color(50, 102, 81));
+        BtnFibonacci.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnFibonacci.setText("Fibonacci entre 2 números");
+        BtnFibonacci.setName(""); // NOI18N
+        jPanel1.add(BtnFibonacci, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 210, 30));
+
+        BtnSerie.setBackground(new java.awt.Color(50, 102, 81));
+        BtnSerie.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        BtnSerie.setText("Serie Hasta número n");
+        BtnSerie.setName(""); // NOI18N
+        jPanel1.add(BtnSerie, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 210, 30));
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 620, 230));
 
         jPanel2.setBackground(new java.awt.Color(248, 148, 6));
 
@@ -207,19 +167,13 @@ public class Interfaz extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton Btn1;
-    private javax.swing.JButton Btn10;
-    private javax.swing.JButton Btn2;
-    private javax.swing.JButton Btn3;
-    private javax.swing.JButton Btn4;
-    private javax.swing.JButton Btn5;
-    private javax.swing.JButton Btn6;
-    private javax.swing.JButton Btn7;
-    private javax.swing.JButton Btn8;
-    private javax.swing.JButton Btn9;
+    private javax.swing.JButton BtnAleatorio;
+    private javax.swing.JButton BtnFibonacci;
     private javax.swing.JButton BtnPotencia;
     private javax.swing.JButton BtnRaiz;
+    private javax.swing.JButton BtnSerie;
     private javax.swing.JButton BtnSuma;
+    private javax.swing.JButton BtnSumatoriaEntre2Numeros;
     private javax.swing.JTextField TxtResultados;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;

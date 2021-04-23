@@ -21,6 +21,7 @@
     <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
     <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
     <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+    <AuxValue name="designerSize" type="java.awt.Dimension" value="-84,-19,0,5,115,114,0,18,106,97,118,97,46,97,119,116,46,68,105,109,101,110,115,105,111,110,65,-114,-39,-41,-84,95,68,20,2,0,2,73,0,6,104,101,105,103,104,116,73,0,5,119,105,100,116,104,120,112,0,0,1,92,0,0,2,103"/>
   </AuxValues>
 
   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout">
@@ -35,7 +36,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="0" y="120" width="620" height="400"/>
+          <AbsoluteConstraints x="0" y="120" width="620" height="230"/>
         </Constraint>
       </Constraints>
 
@@ -45,214 +46,18 @@
       <SubComponents>
         <Component class="javax.swing.JButton" name="BtnSuma">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="+"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="449" y="23" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="BtnPotencia">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="^"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="356" y="23" width="75" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="BtnRaiz">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="&#x221a;"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="534" y="23" width="71" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn3">
-          <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="51" green="66" red="32" type="rgb"/>
             </Property>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
+              <Font name="Tahoma" size="14" style="0"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="3"/>
+            <Property name="text" type="java.lang.String" value="Suma de 2 reales"/>
             <Property name="name" type="java.lang.String" value="" noResource="true"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="220" y="40" width="70" height="70"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn1">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="1"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="40" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn2">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="2"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="130" y="40" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn4">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="4"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="130" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn5">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="5"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="130" y="130" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn6">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="6"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="220" y="130" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn7">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="7"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="40" y="220" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn8">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="8"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="130" y="220" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn9">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="9"/>
-            <Property name="toolTipText" type="java.lang.String" value=""/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="220" y="220" width="70" height="71"/>
-            </Constraint>
-          </Constraints>
-        </Component>
-        <Component class="javax.swing.JButton" name="Btn10">
-          <Properties>
-            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="51" green="66" red="32" type="rgb"/>
-            </Property>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Tahoma" size="24" style="0"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="9"/>
-            <Property name="name" type="java.lang.String" value="" noResource="true"/>
-          </Properties>
-          <Constraints>
-            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="130" y="310" width="70" height="71"/>
+              <AbsoluteConstraints x="60" y="30" width="170" height="30"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -264,7 +69,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="320" y="0" width="-1" height="400"/>
+              <AbsoluteConstraints x="290" y="0" width="-1" height="400"/>
             </Constraint>
           </Constraints>
 
@@ -276,11 +81,113 @@
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="400" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
           </Layout>
         </Container>
+        <Component class="javax.swing.JButton" name="BtnPotencia">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="51" green="66" red="32" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Potencia N&#xfa;mero Real"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="60" y="170" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="BtnRaiz">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="51" green="66" red="32" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Raiz Cuadrada"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="60" y="100" width="170" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="BtnAleatorio">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="51" green="66" red="32" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Aleatorio entre 2 N&#xfa;meros"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="360" y="30" width="210" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="BtnSumatoriaEntre2Numeros">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="51" green="66" red="32" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Sumatoria real entre 2 n&#xfa;meros"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="350" y="80" width="230" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="BtnFibonacci">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="51" green="66" red="32" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Fibonacci entre 2 n&#xfa;meros"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="360" y="130" width="210" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JButton" name="BtnSerie">
+          <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="51" green="66" red="32" type="rgb"/>
+            </Property>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Tahoma" size="14" style="0"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Serie Hasta n&#xfa;mero n"/>
+            <Property name="name" type="java.lang.String" value="" noResource="true"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="360" y="180" width="210" height="30"/>
+            </Constraint>
+          </Constraints>
+        </Component>
       </SubComponents>
     </Container>
     <Container class="javax.swing.JPanel" name="jPanel2">
