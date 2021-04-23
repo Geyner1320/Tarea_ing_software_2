@@ -125,6 +125,11 @@ public class Interfaz extends javax.swing.JFrame {
         BtnFibonacci.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnFibonacci.setText("Fibonacci entre 2 números");
         BtnFibonacci.setName(""); // NOI18N
+        BtnFibonacci.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnFibonacciActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnFibonacci, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 130, 210, 30));
 
         BtnSerie.setBackground(new java.awt.Color(50, 102, 81));
@@ -190,11 +195,26 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnAleatorioActionPerformed
 
     private void BtnSumatoriaEntre2NumerosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSumatoriaEntre2NumerosActionPerformed
-        double num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor"));
-        double num2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese otro valor"));
+        double num1 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese un valor inicial"));
+        double num2 = Double.parseDouble(JOptionPane.showInputDialog(null, "Ingrese el valor tope de la sumatoria"));
         int res = cal.sumatoria(num1,num2);
         TxtResultados.setText(""+res);
     }//GEN-LAST:event_BtnSumatoriaEntre2NumerosActionPerformed
+
+    private void BtnFibonacciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnFibonacciActionPerformed
+        int n;     
+        do {
+             n = Integer.parseInt(JOptionPane.showInputDialog( "Ingrese el " + 
+                "índice del término de Fibonacci [>= 0]: "));
+            if(n < 0) {
+                JOptionPane.showMessageDialog( null, n + " es un " + 
+                    "índice inválido" ) ;
+            }
+        } while(n < 0);
+        
+        int res = cal.fibonacci(n);
+        TxtResultados.setText(""+res);
+    }//GEN-LAST:event_BtnFibonacciActionPerformed
 
     /**
      * @param args the command line arguments

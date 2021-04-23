@@ -75,13 +75,16 @@ public class Calculos {
         }return res;
     }
     
-    
-    
-    
-    
-    
-    
-    
+    public int fibonacci(int a){
+        int res = 0;
+        
+        if(a == 0 || a == 1){
+            return (int) a;
+        }
+        else{
+            return fibonacci(a-2) + fibonacci(a-1); //Dos razones de cambio.
+        }
+    }
     
     
     
