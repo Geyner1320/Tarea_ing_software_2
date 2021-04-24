@@ -147,7 +147,6 @@ public class Interfaz extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(248, 148, 6));
 
-        TxtResultados.setEditable(false);
         TxtResultados.setFont(new java.awt.Font("Lucida Sans Unicode", 0, 48)); // NOI18N
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -238,7 +237,7 @@ public class Interfaz extends javax.swing.JFrame {
         String res="";
         do {
              n = Integer.parseInt(JOptionPane.showInputDialog( "Ingrese el " + 
-                "Numero inicial [>= 0]: "));
+                "Numero hasta \n donde quiere verificar la serie [>= 0]: "));
   
             if(n < 0 ) {
                 JOptionPane.showMessageDialog( null, n + " es un " + 

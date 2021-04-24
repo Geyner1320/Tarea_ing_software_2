@@ -106,15 +106,15 @@ public class Calculos {
             
             if(decimal==0){
                 if(num %2==0){
-                    System.out.println(i);
+                    
                     res+=" N "+i+" ";
                 }else{
-                    System.out.println("N");
+                    
                     res+=" N ";
                 }
             }else{
             res+=" "+i+" ";
-            System.out.println(" "+i+" ");
+            
             }
         } 
         return res;

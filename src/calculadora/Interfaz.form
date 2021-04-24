@@ -246,7 +246,6 @@
       <SubComponents>
         <Component class="javax.swing.JTextField" name="TxtResultados">
           <Properties>
-            <Property name="editable" type="boolean" value="false"/>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Lucida Sans Unicode" size="48" style="0"/>
             </Property>
