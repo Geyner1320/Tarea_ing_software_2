@@ -136,6 +136,11 @@ public class Interfaz extends javax.swing.JFrame {
         BtnSerie.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnSerie.setText("Serie Hasta número n");
         BtnSerie.setName(""); // NOI18N
+        BtnSerie.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnSerieActionPerformed(evt);
+            }
+        });
         jPanel1.add(BtnSerie, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 180, 210, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 620, 230));
@@ -202,20 +207,53 @@ public class Interfaz extends javax.swing.JFrame {
     }//GEN-LAST:event_BtnSumatoriaEntre2NumerosActionPerformed
 
     private void BtnFibonacciActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnFibonacciActionPerformed
-        int n;     
+        int n1;
+        int n2;
+        String res="";
+        do {
+             n1 = Integer.parseInt(JOptionPane.showInputDialog( "Ingrese el " + 
+                "Numero inicial [>= 0]: "));
+             
+             n2 = Integer.parseInt(JOptionPane.showInputDialog( "Ingrese el " + 
+                "Numero final [>= 0]: "));
+             
+            if(n1 < 0 ) {
+                JOptionPane.showMessageDialog( null, n1 + " es un " + 
+                    "índice inválido" ) ;
+            }
+            if (n2 < 0) {
+                JOptionPane.showMessageDialog( null, n2 + " es un " + 
+                    "índice inválido" ) ;
+            }
+
+        } while(n1 < 0 | n2 < 0);
+
+          res = cal.fibonacci(n1,n2);
+          TxtResultados.setText(res);
+    }//GEN-LAST:event_BtnFibonacciActionPerformed
+
+    private void BtnSerieActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSerieActionPerformed
+                                          
+        int n;
+        String res="";
         do {
              n = Integer.parseInt(JOptionPane.showInputDialog( "Ingrese el " + 
-                "índice del término de Fibonacci [>= 0]: "));
-            if(n < 0) {
+                "Numero inicial [>= 0]: "));
+  
+            if(n < 0 ) {
                 JOptionPane.showMessageDialog( null, n + " es un " + 
                     "índice inválido" ) ;
             }
-        } while(n < 0);
-        
-        int res = cal.fibonacci(n);
-        TxtResultados.setText(""+res);
-    }//GEN-LAST:event_BtnFibonacciActionPerformed
 
+        } while(n < 0 );
+
+          res = cal.serieN(n);
+          TxtResultados.setText(res);
+    }//GEN-LAST:event_BtnSerieActionPerformed
+
+    
+    
+    
     /**
      * @param args the command line arguments
      */

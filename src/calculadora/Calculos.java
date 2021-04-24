@@ -75,15 +75,49 @@ public class Calculos {
         }return res;
     }
     
-    public int fibonacci(int a){
-        int res = 0;
+    public String fibonacci(int n1, int n2){
+        String res = "";
         
-        if(a == 0 || a == 1){
-            return (int) a;
-        }
-        else{
-            return fibonacci(a-2) + fibonacci(a-1); //Dos razones de cambio.
-        }
+        int serie = n2, num1 = 0, num2 = 1, suma = 1;
+          
+        for (int i = 1; i < serie; i++) {
+             
+            if(suma>=n1 && suma <n2){
+            res+=" "+suma;
+            }    
+            //primero sumamos
+            suma = num1 + num2;
+            //Despues, cambiamos la segunda variable por la primera
+            num1 = num2;
+            //Por ultimo, cambiamos la suma por la segunda variable
+            num2 = suma; 
+        } 
+        return res;
+    }
+    
+    
+    
+    public String serieN(int n){
+        String res = "";
+        int numBase=5; 
+        for (int i = 1; i < n; i++) {
+            double num = (double)i/numBase;
+            double decimal = num % 1;
+            
+            if(decimal==0){
+                if(num %2==0){
+                    System.out.println(i);
+                    res+=" N "+i+" ";
+                }else{
+                    System.out.println("N");
+                    res+=" N ";
+                }
+            }else{
+            res+=" "+i+" ";
+            System.out.println(" "+i+" ");
+            }
+        } 
+        return res;
     }
     
     
